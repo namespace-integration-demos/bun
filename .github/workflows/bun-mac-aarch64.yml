@@ -20,6 +20,7 @@ on:
       - "build.zig"
       - "Makefile"
       - "Dockerfile"
+      - ".github/workflows/bun-mac-aarch64.yml"
   pull_request:
     branches: [main]
     paths:
@@ -31,6 +32,7 @@ on:
       - "build.zig"
       - "Makefile"
       - "Dockerfile"
+      - ".github/workflows/bun-mac-aarch64.yml"
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -165,7 +167,6 @@ jobs:
   macOS-cpp:
     name: macOS C++
     runs-on: ${{ matrix.runner }}
-    if: github.repository_owner == 'oven-sh'
     timeout-minutes: 90
     strategy:
       matrix:
