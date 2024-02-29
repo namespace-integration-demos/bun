@@ -1,4 +1,4 @@
-name: bun-linux
+name: bun-linux-aarch64
 
 concurrency:
   group: bun-linux-aarch64-${{ github.ref }}
